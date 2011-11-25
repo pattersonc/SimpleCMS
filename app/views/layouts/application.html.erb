@@ -1,21 +1,44 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="utf-8"/>
 		<title></title>
 		<!--[if lt IE 9]>
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
-	  <%= stylesheet_link_tag    "application" %>
-	  <%= javascript_include_tag "application" %>
-	  <%= csrf_meta_tags %>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
-		<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+	<%= stylesheet_link_tag    "application" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	<link href='http://fonts.googleapis.com/css?family=Arapey:400italic' rel='stylesheet' type='text/css'>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
 	</head>
-	
 	<body lang="en">
+		<header id="head">
+			<div id="logo">Merrick Family Foundation</div>
+			<span id="start-mission-quote">&#8220;</span>
+			<div id="mission">The Merrick Family Foundation provides support and opportunities to children and young adults who have experienced unforeseen hardships in order to enhance their quality of life.</div>
+			<span id="end-mission-quote">&#8221;</span>
+			<div id="search">
+				<input type="text">
+				<input type="button" value="Search">
+			</div>
+		
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Events</a></li>
+					<li><a href="#">Beneficiaries</a></li>
+					<li><a href="#">Apply</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		
+		</header>
+		
+		<div id="content-wrapper">
 		<%= yield %>
+		</div>
 	</body>
 	
 </html>
