@@ -26,6 +26,13 @@ footer, header, nav, section, audio, video {
 
 a img {border: 0;}
 
+button,
+html input[type="button"], 
+input[type="reset"], 
+input[type="submit"] {
+    cursor: pointer; /* 1 */
+    -webkit-appearance: button; /* 2 */
+}
 
 
 /*	Typography presets
@@ -192,6 +199,7 @@ body {
 
 #head nav {
 	margin-top: 10px;
+	margin-bottom: 10px;
 	width: 896px;
 	height: 42px;
 	background-image: url(/assets/nav-bg.jpg) ;
@@ -219,6 +227,36 @@ body {
     border: 0 none;
 }
 
+#spinner img {
+	z-index: -1;
+	position: relative;
+}
+
+#spinner {
+	
+	width: 533px;
+	height: 400px;
+	-moz-box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
+		inset 5px 5px 5px rgba(235,235,235, 1);
+	-webkit-box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
+		inset 0px 0px 0px 5px rgba(235,235,235, 1);
+	box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
+			inset 0px 0px 0px 5px rgba(235,235,235, 1);
+}
+
+#article-wrapper {
+	margin-top: 10px;
+	border: 1px solid rgb(235, 235, 235);
+	width: 533px;
+}
+
+#article-wrapper h2 {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: rgb(121, 120, 120);
+	text-transform: uppercase;
+	text-decoration: underline;
+}
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
