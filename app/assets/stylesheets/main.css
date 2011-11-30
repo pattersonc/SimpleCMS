@@ -155,83 +155,104 @@ body {
 	position: relative;
 }
 
-#head #logo {
-    text-indent: -9999px;
-    background-image: url(/assets/logo.jpg);
-    background-repeat: no-repeat;
-    width: 197px;
-    height: 130px;
+	#head #logo {
+	    text-indent: -9999px;
+	    background-image: url(/assets/logo.jpg);
+	    background-repeat: no-repeat;
+	    width: 197px;
+	    height: 130px;
+	}
+
+	#head #search {
+		top: 4px;
+		right: 48px;
+		position: absolute;
+	}
+
+	#head #start-mission-quote {
+		top: 80px;
+		left: 274px;
+		position: absolute;
+		font-size: 61px;
+		color: rgb(235, 235, 235);
+	}
+
+	#head #end-mission-quote {
+		top: 109px;
+		right: 109px;
+		position: absolute;
+		font-size: 61px;
+		color: rgb(235, 235, 235);
+	}
+
+	#head #mission {
+		top: 75px;
+		left: 300px;
+		width: 560px;
+		position:absolute;
+		font-family: 'Arapey', serif;
+		font-weight: 400;
+		font-style: italic;
+		font-size: 16px;
+		line-height: 16px;
+	}
+
+	#head nav {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 896px;
+		height: 42px;
+		background-image: url(/assets/nav-bg.jpg) ;
+		background-repeat: no-repeat;
+	}
+
+	#head li {
+	    float: left;
+	    list-style: none;
+	    margin-left: 48px;
+	}
+
+	#head a {
+	    font-size: 20px;
+	    display: block;
+	    padding: 11px 15px;
+	    color: #fff;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	}
+
+	#head a:hover, #head a:active {
+	    text-decoration: none;
+	    color: #3e3e3e;
+	    border: 0 none;
+	}
+
+#content-wrapper {
+	display: ;
 }
 
-#head #search {
-	top: 4px;
-	right: 48px;
-	position: absolute;
+#mainContent {
+	float: left;
 }
 
-#head #start-mission-quote {
-	top: 80px;
-	left: 274px;
-	position: absolute;
-	font-size: 61px;
-	color: rgb(235, 235, 235);
+aside {
+	float: right;
+	border: 1px solid rgb(235, 235, 235);
+	width: 344px;
+
 }
 
-#head #end-mission-quote {
-	top: 109px;
-	right: 109px;
-	position: absolute;
-	font-size: 61px;
-	color: rgb(235, 235, 235);
-}
+	aside h2 {
+		padding-left: 75px;
+		font-size: 30px;
+		font-weight: 300;
+		font-family: 'Lato', sans-serif;
+		background: rgb(235, 235, 235) no-repeat url(/assets/rss-icon.jpg) 8px center;
+		color: #fff;
+		height: 66px;
+	}
 
-#head #mission {
-	top: 75px;
-	left: 300px;
-	width: 560px;
-	position:absolute;
-	font-family: 'Arapey', serif;
-	font-weight: 400;
-	font-style: italic;
-	font-size: 16px;
-	line-height: 16px;
-}
-
-#head nav {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 896px;
-	height: 42px;
-	background-image: url(/assets/nav-bg.jpg) ;
-	background-repeat: no-repeat;
-}
-
-#head li {
-    float: left;
-    list-style: none;
-    margin-left: 48px;
-}
-
-#head a {
-    font-size: 20px;
-    display: block;
-    padding: 11px 15px;
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-#head a:hover, #head a:active {
-    text-decoration: none;
-    color: #3e3e3e;
-    border: 0 none;
-}
-
-#spinner img {
-	z-index: -1;
-	position: relative;
-}
-
+/* Home Page*/
 #spinner {
 	
 	width: 533px;
@@ -244,19 +265,25 @@ body {
 			inset 0px 0px 0px 5px rgba(235,235,235, 1);
 }
 
+	#spinner img {
+		z-index: -1;
+		position: relative;
+	}
+
 #article-wrapper {
 	margin-top: 10px;
 	border: 1px solid rgb(235, 235, 235);
 	width: 533px;
 }
 
-#article-wrapper h2 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
-	color: rgb(121, 120, 120);
-	text-transform: uppercase;
-	text-decoration: underline;
-}
+	#article-wrapper h2 {
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		color: rgb(121, 120, 120);
+		text-transform: uppercase;
+		text-decoration: underline;
+	}
+
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.

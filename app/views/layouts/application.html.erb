@@ -36,15 +36,14 @@
 		
 		</header>
 		
-		<section id="content-wrapper">
-			
-		<%= yield %>
-		</section>
-		<aside>
-			
-		</aside>
+		<div id="content-wrapper">
+		<div id="mainContent">
+			<%= yield %>
+		</div>
+		<%= render :partial => 'layouts/aside' %>
+		</div>
+		
 		<footer>
-			
 		</footer>
 	</body>
 	
