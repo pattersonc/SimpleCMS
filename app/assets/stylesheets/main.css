@@ -243,13 +243,16 @@ aside {
 }
 
 	aside h2 {
+		padding-top: 10px;
 		padding-left: 75px;
-		font-size: 30px;
+		font-size: 24px;
 		font-weight: 300;
 		font-family: 'Lato', sans-serif;
-		background: rgb(235, 235, 235) no-repeat url(/assets/rss-icon.jpg) 8px center;
+		background: rgb(235, 235, 235) no-repeat url(/assets/rss-icon.png) 8px center;
 		color: #fff;
 		height: 66px;
+		text-transform: uppercase;
+		text-shadow: 4px 4px 5px rgba(150, 150, 150, 0.91);
 	}
 
 /* Home Page*/
