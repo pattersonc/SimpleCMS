@@ -228,7 +228,8 @@ body {
 	}
 
 #content-wrapper {
-	display: ;
+	overflow: auto;
+	height: 1%;
 }
 
 #mainContent {
