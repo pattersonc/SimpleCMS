@@ -31,7 +31,7 @@ eos
 } )
 
 
-home_page = Page.create( {
+test_page = Page.create( {
   :name => 'home',
   :slug => 'test',
   :content => <<eos
