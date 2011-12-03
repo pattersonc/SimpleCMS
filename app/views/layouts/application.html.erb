@@ -23,28 +23,28 @@
 				<input class="text-input" type="text">
 				<input type="button" class="button" value="SEARCH">
 			</div>
-		
+
 			<nav>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Events</a></li>
-					<li><a href="#">Beneficiaries</a></li>
+					<li><a href="<%= content_url :id => :index %>">Home</a></li>
+					<li><a href="<%= content_url :id => :events %>">Events</a></li>
+					<li><a href="<%= content_url :id => :beneficiaries %>">Beneficiaries</a></li>
 					<li><a href="#">Apply</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-		
+
 		</header>
-		
+
 		<div id="content-wrapper">
 		<div id="mainContent">
 			<%= yield %>
 		</div>
 		<%= render :partial => 'layouts/aside' %>
 		</div>
-		
+
 		<footer>
 		</footer>
 	</body>
-	
+
 </html>
