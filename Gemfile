@@ -5,11 +5,6 @@ gem 'rails', '3.1.2'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'therubyracer', :group  => :development
-
-gem "pg", :group => :production
-gem "sqlite3-ruby", :group => :development
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -31,6 +26,17 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :production do 
+	#required for heroku
+	gem "pg"
+end
+
+group :development do
+	# required for ubuntu linux
+	gem 'therubyracer'
+	gem "sqlite3-ruby"
+end
 
 group :test do
   # Pretty printed test output
