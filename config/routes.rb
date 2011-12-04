@@ -1,5 +1,9 @@
 Mff::Application.routes.draw do
 
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   root :to => 'pages#content'
   match ':id' => 'pages#content', :as => :content
 
