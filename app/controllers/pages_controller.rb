@@ -3,11 +3,9 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def content
-    id = params[:id] ||= 'index'
+        
+    @page = Page.active_content_page(params[:id])
     
-    @page = Page.find_by_slug(id)
-    
-    render 'content'
   end
   
   def list
