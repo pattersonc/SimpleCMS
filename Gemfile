@@ -16,7 +16,7 @@ gem 'jquery-rails'
 gem 'activeadmin'
 
 # moved out of assets group to fix issue in production
-gem 'sass-rails',   '~> 3.1.2'
+gem 'sass-rails',   '~> 3.1.5'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
