@@ -1,8 +1,25 @@
 class Page < ActiveRecord::Base
+  scope :active, where(:active => true) 
   
-  def self.active_content_page(slug)
-    id = slug ||= 'index'
-    Page.order("updated_at desc").where(:slug => id).first
+  validates :name, 
+    :presence => true, 
+    :length => { :maximum => 255 }
+
+  validates :title, 
+    :presence => true, 
+    :length => { :maximum => 255 }
+
+  validates :slug,
+    :uniqueness => true,
+    :presence => true, 
+    :length => { :minimum => 5, :maximum => 255 }
+
+  validates :content, 
+    :presence => true, 
+
+  def self.content_page(slug)
+    slug = slug ||= 'index'
+    Page.active.where(:slug => slug).order("updated_at desc").first
   end
     
 end
