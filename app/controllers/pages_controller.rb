@@ -6,6 +6,8 @@ class PagesController < ApplicationController
         
     @page = Page.active_content_page(params[:id])
     
+    raise ActionController::RoutingError.new('Not Found') if @page.nil?
+    
   end
   
   def list
