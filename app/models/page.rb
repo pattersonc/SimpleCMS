@@ -15,7 +15,7 @@ class Page < ActiveRecord::Base
     :length => { :minimum => 5, :maximum => 255 }
 
   validates :content, 
-    :presence => true, 
+    :presence => true
 
   def self.content_page(slug)
     slug = slug ||= 'index'
