@@ -43,13 +43,33 @@ describe Page do
     end
   end
     
-  describe "when getting content page that exists" do
+  describe "when getting content page with slug" do
     before(:each) do
-      
+      Page.create!(@attr)
     end    
     
-    it "should retrieve active content page by slug" do
+    it "should retrieve active content page with valid slug" do
+        @page = Page.content_page(@attr[:slug])
+        @page.should_not be_nil
     end
+
+    it "should not retrieve active content page with invalid slug" do
+        @page = Page.content_page(@attr[:slug] + "-invalid")
+        @page.should be_nil
+    end
+  
+  end
+  
+  describe "when getting content page without slug" do
+    before(:each) do
+      Page.create(@attr.merge(:slug => 'index'))
+    end
+    
+    it "should retrieve content with slug 'index' when :slug is nil" do
+        @page = Page.content_page(nil)
+        @page.should_not be_nil
+    end  
+  
   end
   
 end
