@@ -5,7 +5,7 @@ Mff::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'pages#content'
-  match ':id' => 'pages#content', :as => :content
+  match ':slug' => 'pages#content', :as => :content
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

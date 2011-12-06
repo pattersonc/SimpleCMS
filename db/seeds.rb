@@ -6,15 +6,16 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 home_page = Page.create( {
-  :name => 'home',
+  :name => 'Home',
   :slug => 'index',
+  :title => 'Home',
   :content => <<eos
   <div id="spinner">
   	<img src="/assets/slider-1.jpg">
   </div>
   <div id="article-wrapper">
   <article>
-  	<h2>Header 2</h2>
+  	<h2>Welcome</h2>
   	<div class="by-line"></div>
   	<div class="date"></div>
   	<div class="entry-content">
@@ -26,21 +27,22 @@ home_page = Page.create( {
   	</div>
   </article>
   </div>
-  
+
 eos
 } )
 
 
 test_page = Page.create( {
-  :name => 'home',
-  :slug => 'test',
+  :name => 'Events',
+  :slug => 'events',
+  :title => 'Events',
   :content => <<eos
   <div id="spinner">
   	<img src="/assets/slider-1.jpg">
   </div>
   <div id="article-wrapper">
   <article>
-  	<h2>Header 2</h2>
+  	<h2>Events</h2>
   	<div class="by-line"></div>
   	<div class="date"></div>
   	<div class="entry-content">
@@ -52,6 +54,6 @@ test_page = Page.create( {
   	</div>
   </article>
   </div>
-  
+
 eos
 } )
