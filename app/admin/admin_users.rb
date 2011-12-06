@@ -6,12 +6,13 @@ ActiveAdmin.register AdminUser do
     column :sign_in_count
     default_actions
   end
-  
+
   form do |f|
     f.inputs "Admin Details" do
       f.input :email
+      f.input :password
     end
     f.buttons
   end
-  
+
 end
