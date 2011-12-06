@@ -15,7 +15,7 @@ ActiveAdmin.register Page do
       f.input :title
       f.input :slug
       f.input :active
-      f.input :content
+      f.input :content, :input_html => { :class => 'ckeditor' }
     end
     f.buttons
   end
