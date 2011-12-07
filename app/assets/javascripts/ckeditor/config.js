@@ -26,5 +26,5 @@ CKEDITOR.editorConfig = function( config )
     { name: 'tools',       items : [ 'Maximize'] }
 ];
 
-  config.width = 76%;
+  config.height = 400;
 };
