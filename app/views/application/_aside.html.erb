@@ -1,0 +1,13 @@
+<aside id="side-bar">
+	<h2>Latest News</h2>
+	<% aside.each do |item|%>
+		<article>
+			<div class="date"><%= item.updated_at.strftime("%m/%d/%Y") %></div>
+			<div class="story">
+				<%= raw truncate(item.content, :length => 250, :omission => "... #{link_to 'more', item.slug}", :separator => ' ' ) %>
+			</div>
+		</article>
+	<% end %>
+	
+
+</aside>

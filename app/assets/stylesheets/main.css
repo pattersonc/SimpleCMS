@@ -256,14 +256,30 @@ aside {
 	aside h2 {
 		padding-top: 10px;
 		padding-left: 75px;
-		font-size: 24px;
-		font-weight: 300;
+		font-size: 34px;
+		font-weight: 400;
 		font-family: 'Lato', sans-serif;
 		background: rgb(235, 235, 235) no-repeat url(/assets/rss-icon.png) 8px center;
 		color: #fff;
 		height: 66px;
 		text-transform: uppercase;
-		text-shadow: 4px 4px 5px rgba(150, 150, 150, 0.91);
+		text-shadow: 2px 2px 1px rgba(150, 150, 150, 0.91);
+	}
+	
+	aside article {
+		padding: 5px 10px;
+
+	}
+	
+	aside article div.date {
+		font-size: 16px;
+		text-decoration: underline;
+	}
+	
+	aside article div.story {
+		padding: 5px 0;
+		font-size: 12px;
+		line-height: 1.2em;
 	}
 
 /* Home Page*/
@@ -296,6 +312,10 @@ aside {
 		color: rgb(121, 120, 120);
 		text-transform: uppercase;
 		text-decoration: underline;
+	}
+	
+	#article-wrapper .entry-content {
+		padding: 0 10px;;
 	}
 	
 	footer ul {
