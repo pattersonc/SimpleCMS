@@ -287,6 +287,36 @@ aside {
 		text-transform: uppercase;
 		text-decoration: underline;
 	}
+	
+	footer ul {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: 896px;
+		height: 42px;
+		background-image: url(/assets/nav-bg.jpg) ;
+		background-repeat: no-repeat;
+	}
+
+		footer li {
+		    float: left;
+		    list-style: none;
+		    margin-left: 48px;
+		}
+
+		footer a {
+		    font-size: 20px;
+		    display: block;
+		    padding: 11px 15px;
+		    color: #fff;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		}
+
+		footer a:hover, #head a:active {
+		    text-decoration: none;
+		    color: #3e3e3e;
+		    border: 0 none;
+		}	
 
 
 /*		Tablet Layout: 768px.
