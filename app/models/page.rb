@@ -14,6 +14,9 @@ class Page < ActiveRecord::Base
     :presence => true,
     :length => { :maximum => 255 }
 
+  validates :display_order,
+    :presence => true
+
   validates :content,
     :presence => true
 

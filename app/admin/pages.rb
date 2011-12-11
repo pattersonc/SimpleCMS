@@ -1,10 +1,11 @@
 ActiveAdmin.register Page do
   index do
     column :name
-    column :slug do |page|
+    column :slug, :sortable => :slug do |page|
       link_to "/#{page.slug}", content_path(:slug => page.slug)
     end
     column :active
+    column :display_order
     column :created_at
     column :updated_at
 
@@ -16,6 +17,7 @@ ActiveAdmin.register Page do
       f.input :name
       f.input :title
       f.input :slug
+      f.input :display_order
       f.input :active
       f.input :content, :input_html => { :class => 'ckeditor' }
     end

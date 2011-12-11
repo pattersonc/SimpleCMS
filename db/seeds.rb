@@ -14,6 +14,7 @@
 home_page = Page.create( {
   :name => 'Home',
   :slug => 'index',
+  :display_order: 1,
   :title => 'Home',
   :content => <<eos
   <div id="spinner">
@@ -41,6 +42,7 @@ eos
 test_page = Page.create( {
   :name => 'Events',
   :slug => 'events',
+  :display_order: 1,
   :title => 'Events',
   :content => <<eos
   <div id="spinner">
@@ -52,7 +54,7 @@ test_page = Page.create( {
   	<div class="by-line"></div>
   	<div class="date"></div>
   	<div class="entry-content">
-  		Test - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eget purus sodales interdum in ut purus. Donec imperdiet adipiscing lacus, et pulvinar ligula porttitor sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan tempus tortor faucibus hendrerit. Donec in neque vitae lacus luctus luctus. Phasellus pellentesque imperdiet diam posuere consectetur. Morbi sit amet odio quam, id fringilla justo. Curabitur pulvinar dapibus enim, in pellentesque arcu laoreet nec. Cras egestas velit vitae tortor elementum id semper magna ultricies. Nam eu lorem lorem, vitae blandit mauris. Fusce volutpat arcu eu ligula tincidunt cursus. Quisque gravida lorem id magna accumsan pellentesque.
+  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eget purus sodales interdum in ut purus. Donec imperdiet adipiscing lacus, et pulvinar ligula porttitor sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan tempus tortor faucibus hendrerit. Donec in neque vitae lacus luctus luctus. Phasellus pellentesque imperdiet diam posuere consectetur. Morbi sit amet odio quam, id fringilla justo. Curabitur pulvinar dapibus enim, in pellentesque arcu laoreet nec. Cras egestas velit vitae tortor elementum id semper magna ultricies. Nam eu lorem lorem, vitae blandit mauris. Fusce volutpat arcu eu ligula tincidunt cursus. Quisque gravida lorem id magna accumsan pellentesque.
 
   		Aliquam fermentum, leo nec facilisis condimentum, lacus ante viverra velit, lobortis porta mauris arcu id sapien. Maecenas sagittis felis vel urna consequat ut lacinia leo pharetra. Donec a nisl justo. Vestibulum sed massa urna. Duis pharetra placerat mi sed posuere. Nunc viverra, nisi pharetra pulvinar vulputate, lacus velit bibendum lectus, in sodales ipsum nibh a augue. Nullam ut enim id eros dapibus pretium sed mollis enim. Nulla facilisi.
 
@@ -67,6 +69,7 @@ eos
 test_page = Page.create( {
   :name => 'Beneficiaries',
   :slug => 'beneficiaries',
+  :display_order: 3,
   :title => 'beneficiaries',
   :content => <<eos
   <div id="spinner">
@@ -74,11 +77,11 @@ test_page = Page.create( {
   </div>
   <div id="article-wrapper">
   <article>
-  	<h2>Events</h2>
+  	<h2>Beneficiaries</h2>
   	<div class="by-line"></div>
   	<div class="date"></div>
   	<div class="entry-content">
-  		Beneficiaries - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eget purus sodales interdum in ut purus. Donec imperdiet adipiscing lacus, et pulvinar ligula porttitor sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan tempus tortor faucibus hendrerit. Donec in neque vitae lacus luctus luctus. Phasellus pellentesque imperdiet diam posuere consectetur. Morbi sit amet odio quam, id fringilla justo. Curabitur pulvinar dapibus enim, in pellentesque arcu laoreet nec. Cras egestas velit vitae tortor elementum id semper magna ultricies. Nam eu lorem lorem, vitae blandit mauris. Fusce volutpat arcu eu ligula tincidunt cursus. Quisque gravida lorem id magna accumsan pellentesque.
+  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eget purus sodales interdum in ut purus. Donec imperdiet adipiscing lacus, et pulvinar ligula porttitor sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan tempus tortor faucibus hendrerit. Donec in neque vitae lacus luctus luctus. Phasellus pellentesque imperdiet diam posuere consectetur. Morbi sit amet odio quam, id fringilla justo. Curabitur pulvinar dapibus enim, in pellentesque arcu laoreet nec. Cras egestas velit vitae tortor elementum id semper magna ultricies. Nam eu lorem lorem, vitae blandit mauris. Fusce volutpat arcu eu ligula tincidunt cursus. Quisque gravida lorem id magna accumsan pellentesque.
 
   		Aliquam fermentum, leo nec facilisis condimentum, lacus ante viverra velit, lobortis porta mauris arcu id sapien. Maecenas sagittis felis vel urna consequat ut lacinia leo pharetra. Donec a nisl justo. Vestibulum sed massa urna. Duis pharetra placerat mi sed posuere. Nunc viverra, nisi pharetra pulvinar vulputate, lacus velit bibendum lectus, in sodales ipsum nibh a augue. Nullam ut enim id eros dapibus pretium sed mollis enim. Nulla facilisi.
 

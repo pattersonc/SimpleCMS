@@ -4,7 +4,8 @@ class ApplicationController < ActionController::Base
   helper_method :page_links
   
   def page_links
-    Page.all
+    Page.where(:active => true).order(:display_order)
   end
+  
       
 end
