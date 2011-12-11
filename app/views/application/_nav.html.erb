@@ -1,0 +1,13 @@
+<ul id="nav">
+	<% nav.each do |item| %>
+		<li class="<%= params[:slug] == item.slug ? 'current_page_item' : ''%>">
+			<%= link_to item.title, content_url(:slug => item.slug) %>
+		</li>
+	<% end %>
+		
+	<!-- <li class="current_page_item"><a href="<%= content_url :slug => :index %>">Home</a></li>
+	<li><a href="<%= content_url :slug => :events %>">Events</a></li>
+	<li><a href="<%= content_url :slug => :beneficiaries %>">Beneficiaries</a></li> -->
+	<li><a href="#">Apply</a></li>
+	<li><a href="#">Contact</a></li>
+</ul>
