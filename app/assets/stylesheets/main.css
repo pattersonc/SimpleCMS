@@ -142,14 +142,14 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
 	width: 896px;
-	padding: 72px 48px 84px;
+	padding: 72px 0 84px;
+	margin: 0 auto;
 	background: rgb(255,255,255);
 	color: rgb(60,60,60);
 	-webkit-text-size-adjust: 100%; /* Stops Mobile Safari from auto-adjusting font-sizes */
 }
 
 #head, #content-wrapper {
-	padding: 0 48px 0;
 	margin: 0 auto;
 	width: 896px;
 	position: relative;
@@ -179,7 +179,7 @@ body {
 
 	#head #end-mission-quote {
 		top: 109px;
-		right: 109px;
+		right: 10px;
 		position: absolute;
 		font-size: 61px;
 		color: rgb(235, 235, 235);
