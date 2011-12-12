@@ -1,4 +1,4 @@
-ActiveAdmin.register Widget do
+ActiveAdmin.register Post do
   index do
     column :title
     column :slug, :sortable => :slug do |page|

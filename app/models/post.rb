@@ -1,4 +1,4 @@
-class Widget < ActiveRecord::Base
+class Post < ActiveRecord::Base
   scope :active, where(:active => true)
 
   validates :title,

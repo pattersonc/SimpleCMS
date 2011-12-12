@@ -8,8 +8,8 @@ class ApplicationController < ActionController::Base
     Page.where(:active => true).order(:display_order)
   end
   
-  def widgets
-    Widget.active.order(:updated_at)
+  def posts
+    Post.active.order(:updated_at)
   end
   
       
