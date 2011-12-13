@@ -4,7 +4,7 @@
 		<article>
 			<div class="date"><%= item.updated_at.strftime("%m/%d/%Y") %></div>
 			<div class="story">
-				<%= raw truncate(item.content, :length => 250, :omission => "... #{link_to 'more', item.slug}", :separator => ' ' ) %>
+				<%= raw truncate(item.content, :length => 250, :omission => "... #{link_to 'more', post_path(:id => item.slug) }", :separator => ' ' ) %>
 			</div>
 		</article>
 	<% end %>

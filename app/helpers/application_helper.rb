@@ -8,4 +8,14 @@ module ApplicationHelper
     slug == params[:slug]
   end
   
+  def site_title
+    base_title = Rails.application.config.site_title
+    
+    if(@title.nil?)
+      return base_title
+    end
+    
+    "#{base_title} | #{@title}"
+  end
+  
 end

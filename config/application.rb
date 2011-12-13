@@ -44,5 +44,8 @@ module Mff
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    # Set custom app config here for now...
+    config.site_title = "Merrick Family Foundation"
   end
 end
