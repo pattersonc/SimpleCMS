@@ -23,20 +23,17 @@
 				<input class="text-input" type="text">
 				<input type="button" class="button" value="SEARCH">
 			</div>
-
 			<nav>
 				<%= render :partial => 'nav', :object => page_links %>
 			</nav>
-
 		</header>
 
 		<div id="content-wrapper">
-		<div id="mainContent">
-			<%= yield %>
+			<div id="mainContent">
+				<%= yield %>
+			</div>
+			<%= render :partial => 'aside', :object => posts %>
 		</div>
-		<%= render :partial => 'aside', :object => posts %>
-		</div>
-
 		<footer>
 			<ul>
 				<li>Link 1</li>
@@ -45,6 +42,5 @@
 			</ul>
 		<%= debug(params) if Rails.env.development? %>
 		</footer>
-		
 	</body>
 </html>
