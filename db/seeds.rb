@@ -13,7 +13,7 @@
 
 home_page = Page.create( {
   :slug => 'index',
-  :display_order: 1,
+  :display_order => 1,
   :title => 'Home',
   :content => <<eos
   <div id="spinner">
@@ -40,7 +40,7 @@ eos
 
 test_page = Page.create( {
   :slug => 'events',
-  :display_order: 1,
+  :display_order => 1,
   :title => 'Events',
   :content => <<eos
   <div id="spinner">
@@ -66,7 +66,7 @@ eos
 
 test_page = Page.create( {
   :slug => 'beneficiaries',
-  :display_order: 3,
+  :display_order => 3,
   :title => 'beneficiaries',
   :content => <<eos
   <div id="spinner">
