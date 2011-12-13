@@ -3,10 +3,11 @@ require 'spec_helper'
 describe Page do
   
   before(:each) do
-    @attr = { :name => "example", 
+    @attr = {
       :title => "Example Title",
       :slug => "example-slug",
-      :content => "<div>hello there.</div>" }
+      :content => "<div>hello there.</div>" 
+      }
   end
     
   describe "validation" do
@@ -14,11 +15,6 @@ describe Page do
     it "should be valid with all required fields" do
       @page = Page.new @attr
       @page.should be_valid
-    end
-    
-    it "create should fail without name" do
-      @page = Page.new(@attr.merge({ :name => nil }))
-      @page.should_not be_valid
     end
     
     it "create should fail without title" do

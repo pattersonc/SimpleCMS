@@ -6,7 +6,6 @@ describe PagesController do
   before(:each) do
 
     page = Page.new({
-      :name => "example name",
       :title => "Example Title",
       :slug => "example-slug",
       :active => true,

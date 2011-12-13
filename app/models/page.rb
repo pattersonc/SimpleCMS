@@ -1,10 +1,6 @@
 class Page < ActiveRecord::Base
   scope :active, where(:active => true)
 
-  validates :name,
-    :presence => true,
-    :length => { :maximum => 255 }
-
   validates :title,
     :presence => true,
     :length => { :maximum => 255 }

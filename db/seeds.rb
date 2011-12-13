@@ -12,7 +12,6 @@
 
 
 home_page = Page.create( {
-  :name => 'Home',
   :slug => 'index',
   :display_order: 1,
   :title => 'Home',
@@ -40,7 +39,6 @@ eos
 
 
 test_page = Page.create( {
-  :name => 'Events',
   :slug => 'events',
   :display_order: 1,
   :title => 'Events',
@@ -67,7 +65,6 @@ eos
 } )
 
 test_page = Page.create( {
-  :name => 'Beneficiaries',
   :slug => 'beneficiaries',
   :display_order: 3,
   :title => 'beneficiaries',
