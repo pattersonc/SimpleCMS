@@ -1,10 +1,12 @@
 class PostsController < ApplicationController
 
   def index
-    Post.get_all
+    @posts = Post.get_all
   end
   
   def show
-    Post.get params[:id]
+    @post = Post.get params[:id]
+    raise ActionController::RoutingError.new('Not Found') if @post.nil?
+    @title = @post.title 
   end
 end

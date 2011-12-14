@@ -8,10 +8,13 @@
 
 
  # Create a default user
- AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
+if(!AdminUser.where(:email => 'admin@example.com'))
+  AdminUser.create!(:email => 'admin@example.com', :password => 'password', :password_confirmation => 'password')
+end
 
+Page.delete_all
 
-home_page = Page.create( {
+Page.create( {
   :slug => 'index',
   :display_order => 1,
   :title => 'Home',
@@ -37,8 +40,7 @@ home_page = Page.create( {
 eos
 } )
 
-
-test_page = Page.create( {
+Page.create( {
   :slug => 'events',
   :display_order => 1,
   :title => 'Events',
@@ -64,7 +66,7 @@ test_page = Page.create( {
 eos
 } )
 
-test_page = Page.create( {
+Page.create( {
   :slug => 'beneficiaries',
   :display_order => 3,
   :title => 'beneficiaries',
@@ -86,6 +88,16 @@ test_page = Page.create( {
   	</div>
   </article>
   </div>
+eos
+} )
 
+Post.delete_all
+
+Post.create( {
+  :slug => 'beneficiaries',
+  :title => 'beneficiaries',
+  :active => true,
+  :content => <<eos
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eget purus sodales interdum in ut purus. Donec imperdiet adipiscing lacus, et pulvinar ligula porttitor sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan tempus tortor faucibus hendrerit. Donec in neque vitae lacus luctus luctus. Phasellus pellentesque imperdiet diam posuere consectetur. Morbi sit amet odio quam, id fringilla justo. Curabitur pulvinar dapibus enim, in pellentesque arcu laoreet nec. Cras egestas velit vitae tortor elementum id semper magna ultricies. Nam eu lorem lorem, vitae blandit mauris. Fusce volutpat arcu eu ligula tincidunt cursus. Quisque gravida lorem id magna accumsan pellentesque.
 eos
 } )

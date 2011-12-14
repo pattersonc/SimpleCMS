@@ -17,8 +17,8 @@ class Post < ActiveRecord::Base
     Post.active
   end
   
-  def self.get
-    Post.active.where(:slug => params[:id] )
+  def self.get(slug)
+    Post.active.where(:slug => slug).first
   end
 
 end
