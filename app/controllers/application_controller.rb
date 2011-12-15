@@ -12,5 +12,4 @@ class ApplicationController < ActionController::Base
     Post.active.order(:updated_at)
   end
   
-      
 end

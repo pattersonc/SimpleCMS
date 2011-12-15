@@ -293,6 +293,7 @@ aside {
 		inset 0px 0px 0px 5px rgba(235,235,235, 1);
 	box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
 			inset 0px 0px 0px 5px rgba(235,235,235, 1);
+	margin-bottom: 10px;
 }
 
 	#spinner img {
@@ -301,7 +302,6 @@ aside {
 	}
 
 #article-wrapper {
-	margin-top: 10px;
 	border: 1px solid rgb(235, 235, 235);
 	width: 533px;
 }
@@ -319,8 +319,9 @@ aside {
 	}
 	
 	footer {
-/*		border-top: 1px solid rgb(235,235,235);*/
-	    font-size: 12px;
+		/*border-top: 1px solid rgb(235,235,235);*/
+		margin-top: 10px;
+		font-size: 12px;
 		background: rgb(235, 235, 235);
 		padding: 0px 5px;
 	}

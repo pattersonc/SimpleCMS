@@ -5,7 +5,7 @@
 				<%= link_to item.title, content_path(:slug => item.slug) %>
 			</li>
 		<% end %>
-		<li><a href="<%= apply_path %>">Apply</a></li>
+		<li><a href="<%= apply_path :form_name => :apply %>">Apply</a></li>
 		<li><a href="<%= contact_path %>">Contact</a></li>
 	</ul>
 </nav>
