@@ -94,14 +94,19 @@ ActiveAdmin.setup do |config|
   # We recommend using the built in Active Admin layout and loading
   # up your own stylesheets / javascripts to customize the look
   # and feel.
-  #
+  
+  # Reset stylesheets / javacripts so we can load them from the 
+  # assets/active_admin directory.
+  config.clear_stylesheets!
+  config.clear_javascripts!
+  
   # To load a stylesheet:
-  #   config.register_stylesheet 'my_stylesheet.css'
-  #
+  # config.register_stylesheet 'my_stylesheet.css'
+  config.register_stylesheet 'active_admin/active_admin.css'
+  
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
-
-  # To load a javascript file:
+  config.register_javascript 'active_admin/active_admin.js'
   config.register_javascript 'ckeditor/ckeditor.js'
 
 end
