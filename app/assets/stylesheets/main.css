@@ -318,25 +318,29 @@ aside {
 		padding: 0 10px;;
 	}
 	
+	footer {
+/*		border-top: 1px solid rgb(235,235,235);*/
+	    font-size: 12px;
+		background: rgb(235, 235, 235);
+		padding: 0px 5px;
+	}
+	
 	footer ul {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		width: 896px;
-		height: 42px;
-		background-image: url(/assets/nav-bg.jpg) ;
-		background-repeat: no-repeat;
+		width: 400px;
+		overflow: hidden;
+		height: 1%;
+		/*background-image: url(/assets/nav-bg.jpg) ;*/
+		/*background-repeat: no-repeat;*/
 	}
 
 		footer li {
 		    float: left;
 		    list-style: none;
-		    margin-left: 48px;
+		    margin-right: 5px;;
 		}
 
 		footer a {
-		    font-size: 20px;
 		    display: block;
-		    padding: 11px 15px;
 		    color: #fff;
 		    text-decoration: none;
 		    text-transform: uppercase;
@@ -347,7 +351,10 @@ aside {
 		    color: #3e3e3e;
 		    border: 0 none;
 		}	
-
+		
+		footer #copyright {
+			font
+		}
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.

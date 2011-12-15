@@ -1,9 +1,11 @@
-<ul id="nav">
-	<% nav.each do |item| %>
-		<li class="<%= active_page?(item.slug) ? 'current_page_item' : ''%>">
-			<%= link_to item.title, content_path(:slug => item.slug) %>
-		</li>
-	<% end %>
-	<li><a href="<%= apply_path %>">Apply</a></li>
-	<li><a href="<%= contact_path %>">Contact</a></li>
-</ul>
+<nav>
+	<ul id="nav">
+		<% nav.each do |item| %>
+			<li class="<%= active_page?(item.slug) ? 'current_page_item' : ''%>">
+				<%= link_to item.title, content_path(:slug => item.slug) %>
+			</li>
+		<% end %>
+		<li><a href="<%= apply_path %>">Apply</a></li>
+		<li><a href="<%= contact_path %>">Contact</a></li>
+	</ul>
+</nav>
