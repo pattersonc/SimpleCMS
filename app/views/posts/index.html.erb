@@ -1,0 +1,10 @@
+<div id="article-wrapper">
+	
+	<% @posts.each do |post| %>
+	<article>
+	    <h2><%= post.title %></h2>
+	    <%= post.content %>
+	</article>
+	<% end %>
+
+</div>

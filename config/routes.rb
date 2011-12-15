@@ -1,15 +1,18 @@
 Mff::Application.routes.draw do
 
-  resources :messages
-
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'pages#content'
-  match ':slug' => 'pages#content', :as => :content
   resources :posts
   resources :messages
+  
+  match '/contact' => 'messages#new', :as => :contact
+  match '/apply' => 'messages#new', :as => :apply
+  
+  match ':slug' => 'pages#content', :as => :content
+
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
