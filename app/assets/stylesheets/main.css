@@ -164,8 +164,8 @@ body {
 	}
 
 	#head #search {
+		right: 0;
 		top: 4px;
-		right: 48px;
 		position: absolute;
 	}
 
@@ -213,6 +213,7 @@ body {
 	}
 
 	#head a {
+		font-family: 'Lato', sans-serif;
 	    font-size: 20px;
 	    display: block;
 	    padding: 11px 15px;
@@ -314,6 +315,7 @@ aside {
 		text-transform: uppercase;
 		text-decoration: underline;
 		margin: 0 2px;
+		padding: 5px 5px 0;
 	}
 	
 	#article-wrapper .entry-content {
@@ -321,9 +323,10 @@ aside {
 	}
 	
 	footer {
-		/*border-top: 1px solid rgb(235,235,235);*/
+		
 		margin-top: 10px;
 		font-size: 12px;
+		font-family: 'Lato', sans-serif;
 		background: rgb(235, 235, 235);
 		padding: 0px 5px;
 		text-align: center;
@@ -333,7 +336,7 @@ aside {
 		width: 400px;
 		overflow: hidden;
 		height: 1%;
-		margin: 10px auto 0 auto;
+		margin: 0 auto 0 auto;
 		
 	}
 
@@ -348,6 +351,7 @@ aside {
 		    color: #3C3C3C;
 		    text-decoration: none;
 		    text-transform: uppercase;
+			padding: 7px 0 0;
 		}
 
 		footer a:hover, #head a:active {
@@ -356,9 +360,21 @@ aside {
 		    border: 0 none;
 		}	
 		
-		footer #copyright {
+		footer #legal {
 			display: inline-block;
 			margin: 0 auto;
+		}
+		
+		footer #copyright {
+			display:block;
+		}
+		
+		footer span.purple {
+			color: #7871A6;
+		}
+		
+		footer #phone, footer #fax, footer #address{
+			padding: 0 10px;
 		}
 
 /*		Tablet Layout: 768px.

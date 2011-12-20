@@ -2,7 +2,7 @@
  <%= form_for(@message) do |f| %>
   <% if @message.errors.any? %>
   <div id="errorExplanation">
-    <span><%= pluralize(@message.errors.count, "error") %> prohibited this post from being saved:</span>
+    <span><%= pluralize(@message.errors.count, "error") %> prohibited this message from being sent:</span>
     <ul>
     <% @message.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>
@@ -26,6 +26,6 @@
     <%= f.text_area :message %>
   </div>
   <div class="actions">
-    <%= f.submit 'Send' %>
+    <%= f.submit 'SEND', :class => 'button' %>
   </div>
 <% end %>

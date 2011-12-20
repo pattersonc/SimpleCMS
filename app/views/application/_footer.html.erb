@@ -1,5 +1,5 @@
 <footer>
-	<ul>
+	<!-- <ul>
 		<% footer.each do |item| %>
 			<li>
 			<%= link_to item.title, content_path(:slug => item.slug) %>
@@ -7,9 +7,12 @@
 		<% end %>
 		<li><a href="<%= apply_path %>">Apply</a></li>
 		<li><a href="<%= contact_path %>">Contact</a></li>
-	</ul>
-	<div id="copyright">
-		Copyright 2011 © Merrick Family Foundation.  
+	</ul> -->
+	<div id="legal">
+		<span id="copyright"><span class="purple-txt">©</span> 2011  Merrick Family Foundation. All rights reserved.</span>
+		<span id="address">1234 Your Street Anytown, PA 19100</span> |
+		<span id="phone">Phone: 215-555-5555</span> |
+		<span id="fax">Fax: 215-555-5555</span>
 	</div>
 </footer>
 <%= debug(params) if Rails.env.development? %>

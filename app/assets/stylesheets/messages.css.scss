@@ -1,3 +1,35 @@
 // Place all the styles related to the Messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#new_message {
+	padding: 20px 24px;
+}
+
+#new_message input[type=text], #new_message textarea {
+	width: 90%;
+	border: 1px solid #c9d0d6;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 0.95em;
+	font-family: Helvetica, Arial, sans-serif;
+	outline: none;
+	padding: 8px 10px 7px;
+}
+
+#new_message textarea {
+	height: 200px;
+}
+
+#errorExplanation ul {
+  color: #932419;
+  margin: 0.5em 0 0 20%;
+  list-style: square;
+}
+
+#errorExplanation ul li {
+  padding: 0;
+  border: none;
+  display: list-item;
+}
