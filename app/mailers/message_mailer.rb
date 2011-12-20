@@ -3,6 +3,7 @@ class MessageMailer < ActionMailer::Base
   
   def send_message(message)
     @message = message
-    mail(:to => "chris@celerify.com", :subject => "#{Rails.application.config.site_title} - Message Notification")
+    mail(:to => "chris@celerify.com", 
+      :subject => "#{Rails.application.config.site_title} - Message Notification")
   end
 end

@@ -1,3 +1,17 @@
+# == Schema Information
+#
+# Table name: pages
+#
+#  id            :integer         not null, primary key
+#  slug          :string(255)
+#  content       :text(255)
+#  created_at    :datetime
+#  updated_at    :datetime
+#  title         :string(255)
+#  active        :boolean         default(TRUE)
+#  display_order :integer         default(0)
+#
+
 require 'spec_helper'
 
 describe Page do
