@@ -1,8 +1,8 @@
 ActiveAdmin.register Post do
   index do
     column :title
-    column :slug, :sortable => :slug do |page|
-      link_to "/#{page.slug}", content_path(:slug => page.slug)
+    column :slug, :sortable => :slug do |post|
+      link_to "/#{post.slug}", post_path(:id => post.slug)
     end
     column :active
     column :created_at
