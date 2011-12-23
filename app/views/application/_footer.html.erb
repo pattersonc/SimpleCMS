@@ -5,8 +5,8 @@
 			<%= link_to item.title, content_path(:slug => item.slug) %>
 			</li>
 		<% end %>
-		<li><a href="<%= apply_path %>">Apply</a></li>
-		<li><a href="<%= contact_path %>">Contact</a></li>
+		<li><a href="<%= message_path :id => :contact %>">Apply</a></li>
+		<li><a href="<%= message_path :id => :apply %>">Contact</a></li>
 	</ul> -->
 	<div id="legal">
 		<span id="copyright"><span class="purple-txt">©</span> 2011  Merrick Family Foundation. All rights reserved.</span>

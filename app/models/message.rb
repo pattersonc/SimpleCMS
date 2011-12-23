@@ -13,6 +13,8 @@
 #
 
 class Message < ActiveRecord::Base
+  attr_accessor :form_name
+  
   validates :message, :presence => true
   
   validates :from_email, :presence => true, :format => { 

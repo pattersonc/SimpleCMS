@@ -1,16 +1,14 @@
 class MessagesController < ApplicationController
   
-  def new
-    @message = Message.new
-    @form_name = params['form_name'] || 'contact_form'
+  def show
+    @message = Message.new(:form_name => params[:id])
   end
   
   def create
     @message = Message.new(params[:message])
     
-    if !@message.valid? 
-      @form_name = params['form_name'] || 'contact_form'
-      render :action => 'new'
+    if @message.invalid? 
+      render :action => 'show'
       return
     end
     
@@ -19,10 +17,12 @@ class MessagesController < ApplicationController
     
     if @message.save
       MessageMailer.mail_message(@message).deliver
+      render 'thank_you'
     else
-      render :action => 'new'
+      render :action => 'show'
+      flash[:notice] = 'Unable to send message. Please try again.'
     end
     
   end
-  
+    
 end

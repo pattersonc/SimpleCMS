@@ -5,15 +5,15 @@ Mff::Application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
 
   root :to => 'pages#content'
+  
   resources :posts
-  resources :messages
   
-  match '/contact' => 'messages#new', :as => :contact
-  match '/apply' => 'messages#new', :as => :apply
+  # Route for mailer forms
+  resources :messages # '/message/:id' => 'messages#new', :as => :message
   
+  # Route for Pages, need to add validations to prevent /message and /posts
   match ':slug' => 'pages#content', :as => :content
 
-  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
