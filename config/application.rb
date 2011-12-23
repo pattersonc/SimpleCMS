@@ -49,5 +49,20 @@ module Mff
     config.site_title = "Merrick Family Foundation"
     config.mailer_sender = "noreply@merrickfamilyfoundation.org"
     config.mailer_recipient = "chris@celerify.com"
+    
+    
+    # Mail Settings for Sendgrid
+    
+    
+    ActionMailer::Base.smtp_settings = {
+      :address        => 'smtp.sendgrid.net',
+      :port           => '587',
+      :authentication => :plain,
+      :user_name      => ENV['SENDGRID_USERNAME'],
+      :password       => ENV['SENDGRID_PASSWORD'],
+      :domain         => 'heroku.com'
+    }
+    ActionMailer::Base.delivery_method = :smtp
+    
   end
 end
