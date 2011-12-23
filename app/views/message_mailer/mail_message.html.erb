@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+  </head>
+  <body>
+    <h1>Message from Website</h1>
+	From <%= @message.from_email %>
+	Name <%= @message.from_name %>
+	
+	<div class="field">
+	    <label>Name</label><br>
+	    <span><%= @message.from_name %></span>
+	 </div>
+	<div class="field">
+	    <label>Email</label><br>
+	    <span><%= @message.from_email %></span>
+	 </div>
+	<div class="field">
+	    <label>Message</label><br>
+	    <span><%= @message.message %></span>
+	 </div>
+	<div class="field">
+	    <label>IP Address</label><br>
+	    <span><%= @message.ip %></span>
+	 </div>
+  </body>
+</html>

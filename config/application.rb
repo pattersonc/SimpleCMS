@@ -47,5 +47,7 @@ module Mff
     
     # Set custom app config here for now...
     config.site_title = "Merrick Family Foundation"
+    config.mailer_sender = "noreply@merrickfamilyfoundation.org"
+    config.mailer_recipient = "chris@celerify.com"
   end
 end

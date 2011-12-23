@@ -14,11 +14,11 @@ class MessagesController < ApplicationController
       return
     end
     
-    @message.status = 'New'
+    @message.status = :new
     @message.ip = request.remote_ip
     
     if @message.save
-      MessageMailer.send_message @message
+      MessageMailer.mail_message(@message).deliver
     else
       render :action => 'new'
     end
