@@ -1,11 +1,16 @@
 <nav>
 	<ul id="nav">
 		<% nav.each do |item| %>
-			<li class="<%= active_page?(item.slug) ? 'current_page_item' : ''%>">
+			<li class="<%= active_page1?(:page, item.slug) ? 'current_page_item' : ''%>">
 				<%= link_to item.title, content_path(:slug => item.slug) %>
 			</li>
 		<% end %>
-		<li><a href="<%= message_path :id => :apply %>">Apply</a></li>
-		<li><a href="<%= message_path :id => :contact %>">Contact</a></li>
+		<li class="<%= active_page1?(:message, 'apply') ? 'current_page_item' : ''%>">
+			<%= link_to 'Apply', message_path(:id => :apply) %>
+		</li>
+		<li class="<%= active_page1?(:message, 'contact') ? 'current_page_item' : ''%>">
+			<%= link_to 'Contact', message_path(:id => :contact) %>
+
+		</li>
 	</ul>
 </nav>

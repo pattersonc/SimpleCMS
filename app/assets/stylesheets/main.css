@@ -88,6 +88,7 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 	font-size: 15px;
 	color: #ffffff;
 	padding: 5px 8px;
+	background-color: 8a8a8a;
 	background: -moz-linear-gradient(
 		top,
 		#c2c2c2 0%,
@@ -188,7 +189,7 @@ body {
 	#head #mission {
 		top: 75px;
 		left: 300px;
-		width: 560px;
+		width: 570px;
 		position:absolute;
 		font-family: 'Arapey', serif;
 		font-weight: 400;
