@@ -133,6 +133,10 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 	width: 150px;
 }
 
+a, a:visited, a:active, a:hover {
+	color: #7871A6;
+}
+
 /*		Default Layout: 992px. 
 		Gutters: 24px.
 		Outer margins: 48px.
