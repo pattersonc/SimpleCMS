@@ -28,19 +28,7 @@ Page.create( {
   :display_order => 1,
   :title => 'Events',
   :content => <<eos
-  <div id="article-wrapper">
-  <article>
-  	<h2>Events</h2>
-  	<div class="by-line"></div>
-  	<div class="date"></div>
-  	<div class="entry-content">
-  		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac dolor eget purus sodales interdum in ut purus. Donec imperdiet adipiscing lacus, et pulvinar ligula porttitor sed. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean accumsan tempus tortor faucibus hendrerit. Donec in neque vitae lacus luctus luctus. Phasellus pellentesque imperdiet diam posuere consectetur. Morbi sit amet odio quam, id fringilla justo. Curabitur pulvinar dapibus enim, in pellentesque arcu laoreet nec. Cras egestas velit vitae tortor elementum id semper magna ultricies. Nam eu lorem lorem, vitae blandit mauris. Fusce volutpat arcu eu ligula tincidunt cursus. Quisque gravida lorem id magna accumsan pellentesque.
-  		Aliquam fermentum, leo nec facilisis condimentum, lacus ante viverra velit, lobortis porta mauris arcu id sapien. Maecenas sagittis felis vel urna consequat ut lacinia leo pharetra. Donec a nisl justo. Vestibulum sed massa urna. Duis pharetra placerat mi sed posuere. Nunc viverra, nisi pharetra pulvinar vulputate, lacus velit bibendum lectus, in sodales ipsum nibh a augue. Nullam ut enim id eros dapibus pretium sed mollis enim. Nulla facilisi.
-  		Pellentesque a semper erat. Proin sodales posuere dui, sed iaculis nisi consequat ut. Aenean diam dui, semper in pulvinar a, pretium in tortor. Cras ultrices euismod enim, at hendrerit erat vestibulum vitae. Quisque gravida auctor ante a scelerisque. Aliquam erat volutpat. Nulla quis sem purus. Nullam sollicitudin, tellus id venenatis vulputate, nunc tellus tempor dolor, eget vestibulum lorem orci gravida tellus. Curabitur consectetur bibendum iaculis. Etiam tincidunt lacus et est venenatis nec convallis eros pellentesque. Integer porttitor consequat erat, ac rutrum diam interdum nec. Integer sollicitudin, sem nec luctus imperdiet, nisi risus commodo nibh, non ornare enim nisl at orci. Phasellus felis lorem, tempus quis imperdiet a, accumsan vel lorem. Duis interdum lacus sit amet erat blandit adipiscing.
-  	</div>
-  </article>
-  </div>
-
+<div id="article-wrapper"> <article> <h2> Events</h2> <div class="by-line"> &nbsp;</div> <div class="date" style="text-align: center; "> <strong>3rd Annual</strong></div> <div class="entry-content"> <div style="text-align: center; "> <strong>Merrick Family Foundation&nbsp;</strong><strong>Golf Outing</strong></div> <div style="text-align: center; "> &nbsp;</div> <div style="text-align: center; "> Friday, April 27, 2012</div> <div style="text-align: center; "> Chesapeake Bay Golf Club,&nbsp;</div> <div style="text-align: center; "> North East, MD</div> <div style="text-align: center; "> &nbsp;</div> <div style="text-align: center; "> <a href="/pdfs/mff-3rd-annual-golf-outing-broc.pdf" target="_blank">Download Brochure</a></div> </div> </article> </div>
 eos
 } )
 

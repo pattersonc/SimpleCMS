@@ -33,6 +33,6 @@ function slideSwitch() {
 
 $(function () {
     slideSwitch();
-    setInterval("slideSwitch()", 10000);
+    //setInterval("slideSwitch()", 10000);
 }); 
 
