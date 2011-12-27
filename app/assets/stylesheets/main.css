@@ -284,24 +284,6 @@ aside {
 		line-height: 1.2em;
 	}
 
-/* Home Page*/
-#spinner {
-	
-	width: 533px;
-	height: 400px;
-	-moz-box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
-		inset 5px 5px 5px rgba(235,235,235, 1);
-	-webkit-box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
-		inset 0px 0px 0px 5px rgba(235,235,235, 1);
-	box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
-			inset 0px 0px 0px 5px rgba(235,235,235, 1);
-	margin-bottom: 10px;
-}
-
-	#spinner img {
-		z-index: -1;
-		position: relative;
-	}
 
 #article-wrapper {
 	border: 1px solid rgb(235, 235, 235);
