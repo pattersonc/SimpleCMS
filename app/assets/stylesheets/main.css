@@ -256,7 +256,7 @@ aside {
 	float: right;
 	border: 1px solid rgb(235, 235, 235);
 	width: 344px;
-
+	min-height: 400px;
 }
 
 	aside h2 {
@@ -286,6 +286,14 @@ aside {
 		padding: 5px 0;
 		font-size: 12px;
 		line-height: 1.2em;
+	}
+	
+	aside .widget-container {
+		padding: 10px 40px;
+	}
+	
+	aside #sharethis-widget {
+		bottom: 0;
 	}
 
 
