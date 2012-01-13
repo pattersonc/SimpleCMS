@@ -1,38 +1,46 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title><%= site_title %></title>
-		<!--[if lt IE 9]>
-			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-	<%= stylesheet_link_tag    "application" %>
-	<%= javascript_include_tag "public/application" %>
-	<%= csrf_meta_tags %>
-	<link href='http://fonts.googleapis.com/css?family=Arapey:400italic|Lato:300,400,100|Stoke:400' rel='stylesheet' type='text/css'>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
-	</head>
-	<body lang="en">
-		<header id="head">
-			<div id="logo">Merrick Family Foundation</div>
-			<span id="start-mission-quote">&#8220;</span>
-			<div id="mission">The Merrick Family Foundation provides support and opportunities to children and young adults who have experienced unforeseen hardships in order to enhance their quality of life.</div>
-			<span id="end-mission-quote">&#8221;</span>
-			<div id="search">
-				<input class="text-input" type="text">
-				<input type="button" class="button" value="SEARCH">
-			</div>
-			<%= render :partial => 'nav', :object => page_links %>
-		</header>
+  <head>
+    <meta charset="utf-8"/>
+    <title><%= site_title %></title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  <%= stylesheet_link_tag    "application" %>
+  <%= javascript_include_tag "public/application" %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Arapey:400italic|Lato:300,400,100|Stoke:400' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+  </head>
+  <body lang="en">
+    <header id="head">
+      <div id="logo">Merrick Family Foundation</div>
+      <span id="start-mission-quote">&#8220;</span>
+      <div id="mission">The Merrick Family Foundation provides support and opportunities to children and young adults who have experienced unforeseen hardships in order to enhance their quality of life.</div>
+      <span id="end-mission-quote">&#8221;</span>
+      <div id="search">
+        <input class="text-input" type="text">
+        <input type="button" class="button" value="SEARCH">
+      </div>
+      <div id="donate">
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="WHRUSLW8237N2">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+      <%= render :partial => 'nav', :object => page_links %>
+    </header>
 
-		<div id="content-wrapper">
-			<div id="mainContent">
-				<%= yield %>
-			</div>
-			<%= render :partial => 'aside', :object => posts %>
-		</div>
-		<%= render :partial => 'footer', :object => page_links %>
+    <div id="content-wrapper">
+      <div id="mainContent">
+        <%= yield %>
+      </div>
+      <%= render :partial => 'aside', :object => posts %>
+    </div>
+    <%= render :partial => 'footer', :object => page_links %>
 
-	</body>
+  </body>
 </html>

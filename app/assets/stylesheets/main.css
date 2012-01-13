@@ -173,6 +173,12 @@ body {
 		top: 4px;
 		position: absolute;
 	}
+	
+	#head #donate {
+		right: 267px;
+		top: 7px;
+		position: absolute;
+	}
 
 	#head #start-mission-quote {
 		top: 80px;
@@ -295,7 +301,7 @@ aside {
 	aside #sharethis-widget {
 		bottom: 0;
 	}
-
+	
 
 #article-wrapper {
 	border: 1px solid rgb(235, 235, 235);
@@ -315,6 +321,10 @@ aside {
 	
 	#article-wrapper .entry-content {
 		padding: 0 10px;;
+	}
+	
+	#article-wrapper .entry-content p {
+		padding: 10px 0px;
 	}
 	
 	footer {
