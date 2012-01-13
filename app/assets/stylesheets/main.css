@@ -147,7 +147,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
 	width: 896px;
-	padding: 72px 0 84px;
+	padding: 15px 0 84px;
 	margin: 0 auto;
 	background: rgb(255,255,255);
 	color: rgb(60,60,60);
@@ -178,6 +178,7 @@ body {
 		right: 267px;
 		top: 7px;
 		position: absolute;
+		display: none;
 	}
 
 	#head #start-mission-quote {
@@ -302,6 +303,9 @@ aside {
 		bottom: 0;
 	}
 	
+	aside #donate {
+		margin: 0px 48px 10px;
+	}
 
 #article-wrapper {
 	border: 1px solid rgb(235, 235, 235);
