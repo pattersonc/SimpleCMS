@@ -1,0 +1,18 @@
+<footer>
+	<!-- <ul>
+		<% footer.each do |item| %>
+			<li>
+			<%= link_to item.title, content_path(:slug => item.slug) %>
+			</li>
+		<% end %>
+		<li><a href="<%= message_path :id => :contact %>">Apply</a></li>
+		<li><a href="<%= message_path :id => :apply %>">Contact</a></li>
+	</ul> -->
+	<div id="legal">
+		<span id="copyright"><span class="purple-txt">©</span> 2011  Merrick Family Foundation. All rights reserved.</span>
+		<span id="address">PO Box 400 Essington, PA 19029</span> |
+		<span id="phone">Phone: 610-583-9640</span> |
+		<span id="phone">Email: info@merrickfamilyfoundation.org</span>
+	</div>
+</footer>
+<%= debug(params) if Rails.env.development? %>

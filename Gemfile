@@ -39,7 +39,8 @@ group :development do
 	# required for ubuntu linux
 	gem 'therubyracer'
 	gem "sqlite3-ruby"
-  	gem 'rspec-rails'
+	gem 'rspec-rails'
+	gem 'annotate', '~> 2.4.1.beta'
 end
 
 group :test do

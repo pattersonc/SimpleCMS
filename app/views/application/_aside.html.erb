@@ -1,0 +1,24 @@
+<aside id="side-bar">
+	<h2>Latest News</h2>
+	<% aside.each do |item|%>
+		<article>
+			<div class="date"><%= item.updated_at.strftime("%m/%d/%Y") %></div>
+			<div class="story">
+				<%= raw truncate(item.content, :length => 250, :omission => "... #{link_to 'more', post_path(:id => item.slug) }", :separator => ' ' ) %>
+			</div>
+		</article>
+	<% end %>
+	<div class="widget-container" id="sharethis-widget">
+		<div id="donate">
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="WHRUSLW8237N2">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+    </div>
+		<%= render :partial => 'sharethis' %>		
+		
+	</div> 
+
+</aside>

@@ -1,5 +1,5 @@
 require 'spec_helper'
 
-describe ApplicationHelperSpec do
+describe ApplicationHelper do
 
 end

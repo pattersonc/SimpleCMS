@@ -88,6 +88,7 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 	font-size: 15px;
 	color: #ffffff;
 	padding: 5px 8px;
+	background-color: #8a8a8a;
 	background: -moz-linear-gradient(
 		top,
 		#c2c2c2 0%,
@@ -132,6 +133,10 @@ body {-webkit-tap-highlight-color: rgb(255,255,158);}
 	width: 150px;
 }
 
+a, a:visited, a:active, a:hover {
+	color: #7871A6;
+}
+
 /*		Default Layout: 992px. 
 		Gutters: 24px.
 		Outer margins: 48px.
@@ -142,7 +147,7 @@ px      68    160    252    344    436    528    620    712    804    896    */
 
 body {
 	width: 896px;
-	padding: 72px 0 84px;
+	padding: 15px 0 84px;
 	margin: 0 auto;
 	background: rgb(255,255,255);
 	color: rgb(60,60,60);
@@ -164,9 +169,16 @@ body {
 	}
 
 	#head #search {
+		right: 0;
 		top: 4px;
-		right: 48px;
 		position: absolute;
+	}
+	
+	#head #donate {
+		right: 267px;
+		top: 7px;
+		position: absolute;
+		display: none;
 	}
 
 	#head #start-mission-quote {
@@ -188,7 +200,7 @@ body {
 	#head #mission {
 		top: 75px;
 		left: 300px;
-		width: 560px;
+		width: 570px;
 		position:absolute;
 		font-family: 'Arapey', serif;
 		font-weight: 400;
@@ -213,6 +225,7 @@ body {
 	}
 
 	#head a {
+		font-family: 'Lato', sans-serif;
 	    font-size: 20px;
 	    display: block;
 	    padding: 11px 15px;
@@ -250,84 +263,129 @@ aside {
 	float: right;
 	border: 1px solid rgb(235, 235, 235);
 	width: 344px;
-
+	min-height: 400px;
 }
 
 	aside h2 {
 		padding-top: 10px;
 		padding-left: 75px;
-		font-size: 24px;
-		font-weight: 300;
+		font-size: 34px;
+		font-weight: 400;
 		font-family: 'Lato', sans-serif;
 		background: rgb(235, 235, 235) no-repeat url(/assets/rss-icon.png) 8px center;
 		color: #fff;
 		height: 66px;
 		text-transform: uppercase;
-		text-shadow: 4px 4px 5px rgba(150, 150, 150, 0.91);
+		text-shadow: 2px 2px 1px rgba(150, 150, 150, 0.91);
 	}
-
-/* Home Page*/
-#spinner {
 	
-	width: 533px;
-	height: 400px;
-	-moz-box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
-		inset 5px 5px 5px rgba(235,235,235, 1);
-	-webkit-box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
-		inset 0px 0px 0px 5px rgba(235,235,235, 1);
-	box-shadow: 3px 4px 7px rgba(50,50,50,0.42),
-			inset 0px 0px 0px 5px rgba(235,235,235, 1);
-}
+	aside article {
+		padding: 5px 10px;
 
-	#spinner img {
-		z-index: -1;
-		position: relative;
+	}
+	
+	aside article div.date {
+		font-size: 16px;
+		text-decoration: underline;
+	}
+	
+	aside article div.story {
+		padding: 5px 0;
+		font-size: 12px;
+		line-height: 1.2em;
+	}
+	
+	aside .widget-container {
+		padding: 10px 40px;
+	}
+	
+	aside #sharethis-widget {
+		bottom: 0;
+	}
+	
+	aside #donate {
+		margin: 0px 48px 10px;
 	}
 
 #article-wrapper {
-	margin-top: 10px;
 	border: 1px solid rgb(235, 235, 235);
 	width: 533px;
+	min-height: 400px;
 }
 
 	#article-wrapper h2 {
 		font-family: 'Lato', sans-serif;
 		font-weight: 300;
+		font-size: 30px;
 		color: rgb(121, 120, 120);
 		text-transform: uppercase;
 		text-decoration: underline;
+		margin: 0 2px;
+		padding: 15px 15px 0;
+	}
+	
+	#article-wrapper .entry-content {
+		padding: 10px 15px;;
+	}
+	
+	#article-wrapper .entry-content p {
+		padding: 10px 0px;
+	}
+	
+	footer {
+		
+		margin-top: 10px;
+		font-size: 12px;
+		font-family: 'Lato', sans-serif;
+		background: rgb(235, 235, 235);
+		padding: 0px 5px;
+		text-align: center;
 	}
 	
 	footer ul {
-		margin-top: 10px;
-		margin-bottom: 10px;
-		width: 896px;
-		height: 42px;
-		background-image: url(/assets/nav-bg.jpg) ;
-		background-repeat: no-repeat;
+		width: 400px;
+		overflow: hidden;
+		height: 1%;
+		margin: 0 auto 0 auto;
+		
 	}
 
 		footer li {
 		    float: left;
 		    list-style: none;
-		    margin-left: 48px;
+		    margin-right: 25px;;
 		}
 
 		footer a {
-		    font-size: 20px;
 		    display: block;
-		    padding: 11px 15px;
-		    color: #fff;
+		    color: #3C3C3C;
 		    text-decoration: none;
 		    text-transform: uppercase;
+			padding: 7px 0 0;
 		}
 
 		footer a:hover, #head a:active {
-		    text-decoration: none;
+		    text-decoration: underline;
 		    color: #3e3e3e;
 		    border: 0 none;
 		}	
-
+		
+		footer #legal {
+			display: inline-block;
+			margin: 0 auto;
+		}
+		
+		footer #copyright {
+			display:block;
+		}
+		
+		footer span.purple {
+			color: #7871A6;
+		}
+		
+		footer #phone, footer #fax, footer #address{
+			padding: 0 10px;
+		}
 
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
@@ -337,6 +395,7 @@ aside {
 cols    1     2      3      4      5      6      7      8
 px      68    160    252    344    436    528    620    712    */
 
+/*
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	
 	body {
@@ -345,7 +404,7 @@ px      68    160    252    344    436    528    620    712    */
 	}
 
 }
-
+*/
 
 
 /*		Mobile Layout: 320px.
@@ -355,7 +414,7 @@ px      68    160    252    344    436    528    620    712    */
 ---------------------------------------------
 cols    1     2      3
 px      68    160    252    */
-
+/*
 @media only screen and (max-width: 767px) {
 	
 	body {
@@ -364,7 +423,7 @@ px      68    160    252    */
 	}
 	
 }
-
+*/
 
 
 /*		Wide Mobile Layout: 480px.
@@ -374,7 +433,7 @@ px      68    160    252    */
 ------------------------------------------------------------
 cols    1     2      3      4      5
 px      68    160    252    344    436    */
-
+/*
 @media only screen and (min-width: 480px) and (max-width: 767px) {
 	
 	body {
@@ -382,4 +441,4 @@ px      68    160    252    344    436    */
 		padding: 36px 22px 48px;
 	}
 	
-}
+}*/
