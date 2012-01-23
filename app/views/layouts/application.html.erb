@@ -20,8 +20,11 @@
       <div id="mission">The Merrick Family Foundation provides support and opportunities to children and young adults who have experienced unforeseen hardships in order to enhance their quality of life.</div>
       <span id="end-mission-quote">&#8221;</span>
       <div id="search">
-        <input class="text-input" type="text">
-        <input type="button" class="button" value="SEARCH">
+        <form action="http://www.google.com/search" method="get">
+        <input style="visibility:hidden" type="radio" name="sitesearch" value="merrickfamilyfoundation.org" checked="checked" /> 
+        <input class="text-input" type="text" name="q">
+        <input type="submit" class="button" value="SEARCH">
+        </form>
       </div>
       <div id="donate">
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
