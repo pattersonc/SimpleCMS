@@ -251,7 +251,7 @@ body {
 		}
 
 #content-wrapper {
-	overflow: auto;
+	overflow: hidden;
 	height: 1%;
 }
 
