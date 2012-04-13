@@ -21,7 +21,8 @@ class Post < ActiveRecord::Base
   validates :slug,
     :uniqueness => true,
     :presence => true,
-    :length => { :maximum => 255 }
+    :length => { :maximum => 255 },
+    :format => { :with => /^[a-z0-9-]+$/ }
 
   validates :content,
     :presence => true
