@@ -1,10 +1,8 @@
-== SimpleCMS
+## SimpleCMS
 
-SimpleCMS is a extremely simple CMS platform that was originally developed to host 
-the Merrick Family Foundation website (www.merrickfamilyfoundation.org). It uses the ActiveAdmin gem to allow
-users to administor and update their site. 
+SimpleCMS is a extremely simple CMS platform that was originally developed to host the Merrick Family Foundation website (www.merrickfamilyfoundation.org). It uses the ActiveAdmin gem to allow users to administor and update their site. 
 
-== Deployment
+## Deployment
 
 Deployment of SimpleCMS has been tested on Heroku.
 
